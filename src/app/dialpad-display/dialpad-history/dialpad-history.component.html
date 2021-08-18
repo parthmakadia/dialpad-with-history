@@ -1,0 +1,12 @@
+<div class="alert alert-primary" role="alert" *ngIf="dialPadHistoryEntries.length == 0">
+    Keypad history does not exist. Please press any key from keypad to get history
+</div>
+
+<div *ngIf="dialPadHistoryEntries.length > 0">
+    <div *ngFor="let dialPadHistoryEntry of dialPadHistoryEntries">
+        <span><strong>Key: </strong></span>
+        <span>{{dialPadHistoryEntry.key}}</span>&nbsp;&nbsp;&nbsp;
+        <span><strong>Time: </strong></span>
+        <span>{{dialPadHistoryEntry.keyPressTime | date:'dd/mm/yyyy hh:mm:ss'}}</span>
+    </div>
+</div>

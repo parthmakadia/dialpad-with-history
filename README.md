@@ -2,26 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is a dialpad with its history kind of application.
 
-## Code scaffolding
+To run this application we need to follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. First of all pull the code in your local.
+2. Go to the directory where there is a code fetched.
+3. Open terminal
+3. Install required dependencies by hitting command in the code directory in terminal: `npm install`
+4. To run the application hit the command in terminal: `ng serve`
+5. Open following url in browser to open the application: `http://localhost:4200/`
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The Application Screen consits of two sides
+1. In right side dialpad is there.
+2. In left side keypad history is shown.
 
-## Running unit tests
+At the initialization of the app it shows the message that 'Keypad history does not exist. Please press any key from keypad to get history' because keypad history not exist.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+When clicking on any key that time key entry is being reflected in session storage. It will show history in left side.
